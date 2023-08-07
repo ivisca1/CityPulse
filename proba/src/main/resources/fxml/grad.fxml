@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" prefHeight="135.0" prefWidth="470.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@glavna.css" />
+   </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="%nazivD" />
+      <Label text="%stanovnikaG" GridPane.rowIndex="1" />
+      <Label text="%postanskiBroj" GridPane.rowIndex="2" />
+      <Label text="%drzavaG" GridPane.rowIndex="3" />
+      <TextField fx:id="fieldNaziv" prefHeight="25.0" prefWidth="190.0" GridPane.columnIndex="1" />
+      <TextField fx:id="fieldBrojStanovnika" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="fldPostanskiBroj" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ChoiceBox fx:id="choiceDrzava" prefHeight="25.0" prefWidth="156.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <buttons>
+          <Button fx:id="btnOk" defaultButton="true" mnemonicParsing="false" onAction="#actionOk" text="Ok" />
+            <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+      <ImageView fx:id="imageView" fitHeight="92.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowSpan="4" GridPane.valignment="CENTER" />
+      <Button fx:id="btnPromjena" mnemonicParsing="false" onAction="#actionPromjena" text="%promjena" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

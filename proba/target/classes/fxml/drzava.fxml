@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" prefHeight="106.0" prefWidth="262.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@glavna.css" />
+   </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="%nazivD" />
+      <Label text="%glGrad" GridPane.rowIndex="1" />
+      <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" />
+      <ChoiceBox fx:id="choiceGrad" prefHeight="26.0" prefWidth="125.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ButtonBar prefHeight="36.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <buttons>
+          <Button fx:id="btnOk" defaultButton="true" mnemonicParsing="false" onAction="#actionOk" text="Ok" />
+            <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

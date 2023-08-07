@@ -1,0 +1,7 @@
+.neispravno {
+  -fx-background-color: lightpink;
+}
+
+.ispravno {
+  -fx-background-color: greenyellow;
+}

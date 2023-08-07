@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="401.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="tableViewGradovi" prefHeight="398.0" prefWidth="454.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="colGradId" prefWidth="75.0" text="%id" />
+          <TableColumn fx:id="colGradNaziv" prefWidth="75.0" text="%naziv" />
+            <TableColumn fx:id="colGradStanovnika" prefWidth="109.19998168945312" text="%stanovnika" />
+            <TableColumn fx:id="colGradDrzava" prefWidth="191.99998168945314" text="%drzava" />
+           <TableColumn fx:id="colGradPost" prefWidth="109.19998168945312" text="Poštanski broj" />
+        </columns>
+      </TableView>
+      <VBox prefHeight="398.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+         <children>
+            <Button fx:id="btnDodajGrad" mnemonicParsing="false" onAction="#actionDodajGrad" prefHeight="26.0" prefWidth="110.0" text="%dodajG">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnDodajDrzavu" mnemonicParsing="false" onAction="#actionDodajDrzavu" prefWidth="110.0" text="%dodajD">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnIzmijeniGrad" mnemonicParsing="false" onAction="#actionIzmijeniGrad" prefHeight="26.0" prefWidth="110.0" text="%izmijeniG">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnObrisiGrad" mnemonicParsing="false" onAction="#actionObrisiGrad" prefHeight="26.0" prefWidth="110.0" text="%obrisiG">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnStampa" mnemonicParsing="false" onAction="#actionStampa" prefHeight="26.0" prefWidth="110.0" text="%stampa">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnJezik" mnemonicParsing="false" onAction="#actionJezik" prefHeight="26.0" prefWidth="110.0" text="%jezik">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></VBox>
+   </children>
+</GridPane>
