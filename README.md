@@ -1,4 +1,12 @@
-# ManageCountriesAndCities
+# CityPulse
+
+<div align="center">
+  
+![Logo](https://github.com/ivisca1/CityPulse/blob/main/logo/citypulse-logo.png?raw=true)
+
+</div>
+
+# About
 
 Desktop application implemented with Java and JavaFx which allowes users to manage countries and cities with a table. App is available in multiple languages.
 
